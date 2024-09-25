@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt Formular</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="wrapper">
+        <form action="">
+
+          <h2>kontakt</h2>  
+          <div>
+            <label for="country">Land</label>
+            <select name="country" id="country" required>
+                <option value=""selected disabled>Auswählen</option>
+                <option value="Germany">Germany</option>
+                <option value="franch">Frankreich</option>
+                <option value="kamerun">Kamerun</option>
+                <option value="iran">Iran</option>
+            </select>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Bitte Name hier eingeben" required minlength="5" pattern="[a-zA-Z]+">
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"
+                placeholder="beispiel@mail.com"
+                required>
+            </div>
+
+            <div>
+                <label for="message">Message</label>
+                <textarea name="message" id="message"
+                 placeholder="Geben Sie ihre Nahcricht ein"
+                 rows="3" cols="25"></textarea>
+            </div>
+            <div>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <span>Subscribe?</span>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
